@@ -839,8 +839,8 @@ outline: none;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.01em;
-color: var(--text-light-theme-color)
-transition: border 3000ms var(--transition-function); 
+color: var(--text-light-theme-color);
+transition: border var(--transition-time) var(--transition-function); 
 }
 
 .form-input {

@@ -478,16 +478,18 @@
           </ul>
         </div>
         <div class="footer-sign">
-          <p class="title"><b>Подпишитесь на рассылку</b></p>
-          <!--Здесь будет форма подписки-->
-          <div class="form">
-            <div class="form-input"></div>
-            <button class="modal-btn">Подписаться
-              <svg class="footer-sign-modal-btn-send"><use href="./images/icons/sprite.svg#icon-send"></use></svg>
-            </button>
+          <form action="#" class="form-sign">
+            <label class="form-sign-label">
+              <p class="title"><b>Подпишитесь на рассылку</b></p>
+              <div class="form-sign-input-wrapper">
+              <input class="form-sign-input" type="email" name="sign-mail" id="sign-mail" placeholder="E-mail" autocomplete="on" required>
+              <button type="submit" class="modal-btn form-sign-button">Подписаться
+                <svg class="footer-sign-modal-btn-send"><use href="./images/icons/sprite.svg#icon-send"></use></svg>
+              </button>
+            </div>
+            </label>
+            </form>
           </div>
-        </div>
-      </div>
-    </footer>
+         </footer>
   </body>
 </html>

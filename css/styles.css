@@ -585,9 +585,6 @@ transition-timing-function: var(--transition-function);
   fill: var(--title-dark-theme-color);
   }
 
-.footer .form {
-  display: flex;
-}
 .footer .form-input {
   margin-right: 12px;
   width: 358px;
@@ -708,8 +705,9 @@ transition-timing-function: var(--transition-function);
 }
 .projects-name-class {
   margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin-bottom: 0px;
+   margin-left: 24px;
+   padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -764,30 +762,31 @@ transition-timing-function: var(--transition-function);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* transition: transform var(--transition-time) var(--transition-function);  */
-  }
-
- .backdrop.is-hidden .contact-form {
-  transform: translate(-50%, -50%) scale(0.8);
-  /* transition: transform var(--transition-time) var(--transition-function);  */
    }
 
+ .backdrop.is-hidden .form-layout {
+  transform: translate(-50%, -50%) scale(0.8);
+     }
+
+   .form-layout {
+    position:absolute;
+    top:50%;
+    left: 50%;
+     transform: translate(-50%, -50%) scale(1);
+     transition: transform var(--transition-time) var(--transition-function); 
+     padding: 40px;
+     width: 528px;
+   height: 581px;
+   background: var(--title-dark-theme-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   }
+   
 .contact-form {
-  position:absolute;
-  top:50%;
-  left: 50%;
-   transform: translate(-50%, -50%) scale(1);
-   transition: transform var(--transition-time) var(--transition-function); 
-   display: flex;
+     display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 40px;
-  width: 528px;
-height: 581px;
-background: var(--title-dark-theme-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-}
+  }
 
 .modal-close-btn {
   position: absolute;
@@ -970,6 +969,9 @@ background:#188CE8;
 /* FOOTER SIGN-FORM */
 .form-sign-input-wrapper {
   display: flex;}
+
+.form-sign-label {
+display: block;}
 
 .form-sign-input {
 display: block;

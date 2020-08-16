@@ -537,26 +537,28 @@
         </div>
         <div class="footer-sign">
           <form action="#" class="form-sign">
-            <label class="form-sign-label">
-              <p class="title"><b>Подпишитесь на рассылку</b></p>
+            <label class="form-sign-label title" for="sign-mail">
+              <b>Подпишитесь на рассылку</b> </label>
               <div class="form-sign-input-wrapper">
               <input class="form-sign-input" type="email" name="sign-mail" id="sign-mail" placeholder="E-mail" autocomplete="on" required>
               <button type="submit" class="modal-btn form-sign-button">Подписаться
                 <svg class="footer-sign-modal-btn-send"><use href="./images/icons/sprite.svg#icon-send"></use></svg>
               </button>
             </div>
-            </label>
             </form>
           </div>
+      </div>
     </footer>
     <!--Форма обратной связи-->
     <div data-modal class="backdrop is-hidden">
+    <div class="form-layout">
+      <button data-modal-close class="modal-close-btn" type="button">
+        <svg class="close-icon">
+<use href="./images/icons/sprite.svg#icon-close"></use>
+</svg>
+</button>
                      <form class="contact-form" action="#" autocomplete="on">
-              <button data-modal-close class="modal-close-btn" type="button">
-                    <svg class="close-icon">
-            <use href="./images/icons/sprite.svg#icon-close"></use>
-          </svg>
-         </button>
+            
         <b class="contact-form-title">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="modal-form-input-wrapper">
                 <input class="form-input name" type="text" name="user-name" id="user-name" minlength="2"  maxlength="40" placeholder=" " required autofocus> 
@@ -577,13 +579,14 @@
       </div>
               <textarea name="form-comment" class="form-comment" placeholder="Комментарий" autocomplete="off"></textarea>
               <label class="form-agreement-label">
-        <input class="form-checkbox" type="checkbox" name="agreement" value="accept-agreement" autocomplete="off"> 
+        <input class="form-checkbox" type="checkbox" name="agreement" value="accept-agreement"> 
         <span class="form-custom-checkbox"></span>
         <span class="agreement">Соглашаюсь с рассылкой и принимаю 
         <a href="#"> Условия договора</a></span>
       </label>
                <button class="modal-btn" type="submit">Отправить</button>
                    </form>
+    </div>
                       </div>
       <!-- Скрипт для кнопок формы -->
   <script src="./js/modal.js"></script>

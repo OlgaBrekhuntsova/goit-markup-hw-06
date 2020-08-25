@@ -585,26 +585,8 @@ transition-timing-function: var(--transition-function);
   fill: var(--title-dark-theme-color);
   }
 
-.footer .form-input {
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.footer-sign .modal-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-.footer-sign-modal-btn-send {
-  width: 24px;
-  height: 24px;
-  fill: var(--title-dark-theme-color);
-  margin-left: 10px;
-}
+
+
 
 /*PORTFOLIO*/
 .portfolio-header {
@@ -995,6 +977,15 @@ letter-spacing: 0.03em;
 color: var(--text-dark-theme-color);
   }
 
-  footer .form-sign-button {
+  .form-sign-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 12px;
   }
+  .sign-btn-send-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--title-dark-theme-color);
+    margin-left: 10px;
+  } 
